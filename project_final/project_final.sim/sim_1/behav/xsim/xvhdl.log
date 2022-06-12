@@ -1,0 +1,24 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/trunk/packages/pkg_param.vhd" into library dec_viterbi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/trunk/packages/pkg_helper.vhd" into library dec_viterbi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/trunk/packages/pkg_param_derived.vhd" into library dec_viterbi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/trunk/packages/pkg_types.vhd" into library dec_viterbi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/acs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'acs'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/axi4s_buffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi4s_buffer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/branch_distance.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'branch_distance'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/trunk/packages/pkg_components.vhd" into library dec_viterbi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/trunk/packages/pkg_trellis.vhd" into library dec_viterbi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/generic_sp_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_sp_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/ram_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ram_ctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/recursion.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'recursion'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/reorder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reorder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/traceback.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'trellis_traceback'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/recent/decoder6/project_6/project_6.srcs/sources_1/imports/src/dec_viterbi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dec_viterbi'

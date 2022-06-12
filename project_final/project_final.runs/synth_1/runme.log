@@ -1,0 +1,877 @@
+
+*** Running vivado
+    with args -log dec_viterbi.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dec_viterbi.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source dec_viterbi.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Administrator/Desktop/users/lovecelia'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top dec_viterbi -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3772 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 465.070 ; gain = 101.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dec_viterbi' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:65]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'axi4s_buffer' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/axi4s_buffer.vhd:26' bound to instance 'inst_axi4s_buffer' of component 'axi4s_buffer' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'axi4s_buffer' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/axi4s_buffer.vhd:52]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'axi4s_buffer' (1#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/axi4s_buffer.vhd:52]
+	Parameter EDGE_WEIGHT bound to: 2'b11 
+INFO: [Synth 8-3491] module 'branch_distance' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:27' bound to instance 'inst_branch_distance' of component 'branch_distance' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'branch_distance' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter EDGE_WEIGHT bound to: 2'b11 
+WARNING: [Synth 8-6014] Unused sequential element v_branch_result_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'branch_distance' (2#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter EDGE_WEIGHT bound to: 2'b10 
+INFO: [Synth 8-3491] module 'branch_distance' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:27' bound to instance 'inst_branch_distance' of component 'branch_distance' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'branch_distance__parameterized1' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter EDGE_WEIGHT bound to: 2'b10 
+WARNING: [Synth 8-6014] Unused sequential element v_branch_result_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'branch_distance__parameterized1' (2#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter EDGE_WEIGHT bound to: 2'b01 
+INFO: [Synth 8-3491] module 'branch_distance' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:27' bound to instance 'inst_branch_distance' of component 'branch_distance' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'branch_distance__parameterized3' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter EDGE_WEIGHT bound to: 2'b01 
+WARNING: [Synth 8-6014] Unused sequential element v_branch_result_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'branch_distance__parameterized3' (2#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter EDGE_WEIGHT bound to: 2'b00 
+INFO: [Synth 8-3491] module 'branch_distance' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:27' bound to instance 'inst_branch_distance' of component 'branch_distance' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'branch_distance__parameterized5' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter EDGE_WEIGHT bound to: 2'b00 
+WARNING: [Synth 8-6014] Unused sequential element v_branch_result_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'branch_distance__parameterized5' (2#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/branch_distance.vhd:53]
+	Parameter initialize_value bound to: 8'b00000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:68]
+	Parameter INITIALIZE_VALUE bound to: 8'b00000000 
+WARNING: [Synth 8-6014] Unused sequential element v_low_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element v_high_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:102]
+WARNING: [Synth 8-6014] Unused sequential element v_diff_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'acs' (3#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:68]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'acs__parameterized1' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:68]
+	Parameter INITIALIZE_VALUE bound to: 8'b11000000 
+WARNING: [Synth 8-6014] Unused sequential element v_low_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:101]
+WARNING: [Synth 8-6014] Unused sequential element v_high_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:102]
+WARNING: [Synth 8-6014] Unused sequential element v_diff_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'acs__parameterized1' (3#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:68]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+	Parameter initialize_value bound to: 8'b11000000 
+INFO: [Synth 8-3491] module 'acs' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:27' bound to instance 'inst_acs' of component 'acs' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:197]
+INFO: [Synth 8-3491] module 'ram_ctrl' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:30' bound to instance 'inst_ram_ctrl' of component 'ram_ctrl' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'ram_ctrl' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:61]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:166]
+	Parameter DISTR_RAM bound to: 1 - type: bool 
+	Parameter WORDS bound to: 96 - type: integer 
+	Parameter BITWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'generic_sp_ram' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/generic_sp_ram.vhd:22' bound to instance 'inst_generic_sp_ram' of component 'generic_sp_ram' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:440]
+INFO: [Synth 8-638] synthesizing module 'generic_sp_ram' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/generic_sp_ram.vhd:42]
+	Parameter DISTR_RAM bound to: 1 - type: bool 
+	Parameter WORDS bound to: 96 - type: integer 
+	Parameter BITWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_sp_ram' (4#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/generic_sp_ram.vhd:42]
+	Parameter DISTR_RAM bound to: 1 - type: bool 
+	Parameter WORDS bound to: 96 - type: integer 
+	Parameter BITWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'generic_sp_ram' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/generic_sp_ram.vhd:22' bound to instance 'inst_generic_sp_ram' of component 'generic_sp_ram' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:440]
+	Parameter DISTR_RAM bound to: 1 - type: bool 
+	Parameter WORDS bound to: 96 - type: integer 
+	Parameter BITWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'generic_sp_ram' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/generic_sp_ram.vhd:22' bound to instance 'inst_generic_sp_ram' of component 'generic_sp_ram' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:440]
+	Parameter DISTR_RAM bound to: 1 - type: bool 
+	Parameter WORDS bound to: 96 - type: integer 
+	Parameter BITWIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'generic_sp_ram' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/generic_sp_ram.vhd:22' bound to instance 'inst_generic_sp_ram' of component 'generic_sp_ram' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:440]
+WARNING: [Synth 8-6014] Unused sequential element ini_cnt_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:169]
+WARNING: [Synth 8-6014] Unused sequential element v_window_length_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:215]
+WARNING: [Synth 8-6014] Unused sequential element v_acquisition_length_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:216]
+WARNING: [Synth 8-6014] Unused sequential element last_of_block_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:412]
+INFO: [Synth 8-256] done synthesizing module 'ram_ctrl' (5#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/ram_ctrl.vhd:61]
+INFO: [Synth 8-3491] module 'trellis_traceback' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/traceback.vhd:26' bound to instance 'inst_trellis_traceback' of component 'trellis_traceback' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'trellis_traceback' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/traceback.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'trellis_traceback' (6#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/traceback.vhd:46]
+INFO: [Synth 8-3491] module 'trellis_traceback' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/traceback.vhd:26' bound to instance 'inst_trellis_traceback' of component 'trellis_traceback' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:249]
+INFO: [Synth 8-3491] module 'reorder' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/reorder.vhd:27' bound to instance 'inst_reorder' of component 'reorder' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'reorder' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/reorder.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element last_window_reg was removed.  [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/reorder.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'reorder' (7#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/reorder.vhd:51]
+INFO: [Synth 8-3491] module 'reorder' declared at 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/reorder.vhd:27' bound to instance 'inst_reorder' of component 'reorder' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:274]
+INFO: [Synth 8-256] done synthesizing module 'dec_viterbi' (8#1) [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/dec_viterbi.vhd:65]
+WARNING: [Synth 8-3331] design acs__parameterized1 has unconnected port s_axis_inprev_tvalid
+WARNING: [Synth 8-3331] design acs__parameterized1 has unconnected port m_axis_outprob_tready
+WARNING: [Synth 8-3331] design acs has unconnected port s_axis_inprev_tvalid
+WARNING: [Synth 8-3331] design acs has unconnected port m_axis_outprob_tready
+WARNING: [Synth 8-3331] design generic_sp_ram has unconnected port rst
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[15]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[14]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[13]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[12]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[11]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[7]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[6]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[5]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[4]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[3]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[7]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[6]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[5]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[4]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[3]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 522.469 ; gain = 159.336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 522.469 ; gain = 159.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 522.469 ; gain = 159.336
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/constrs_1/new/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 893.770 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 894.109 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 894.109 ; gain = 0.340
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 894.109 ; gain = 530.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 894.109 ; gain = 530.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 894.109 ; gain = 530.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'write_ram_fsm_reg' in module 'ram_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_read_ram[0].read_ram_fsm_reg[0]' in module 'ram_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_read_ram[1].read_ram_fsm_reg[1]' in module 'ram_ctrl'
+INFO: [Synth 8-5546] ROM "read_ram_fsm[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "read_ram_fsm[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "read_ram_fsm[0]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_ram_fsm[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 's_axis_inprev_tready_reg' into 'm_axis_outprob_tvalid_reg' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:89]
+INFO: [Synth 8-4471] merging register 's_axis_inprev_tready_reg' into 'm_axis_outprob_tvalid_reg' [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/acs.vhd:89]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Administrator/Desktop/recent/final/project_final/project_final.srcs/sources_1/imports/src/reorder.vhd:98]
+INFO: [Synth 8-5546] ROM "m_axis_output_last_tuser" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         wait_for_window |                               00 |                               00
+               traceback |                               01 |                               01
+            wait_for_ram |                               10 |                               10
+                  finish |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_read_ram[1].read_ram_fsm_reg[1]' using encoding 'sequential' in module 'ram_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               configure |                              001 |                              000
+                   start |                              100 |                              001
+                     run |                              011 |                              010
+      wait_for_traceback |                              010 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'write_ram_fsm_reg' using encoding 'sequential' in module 'ram_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         wait_for_window |                               00 |                               00
+               traceback |                               01 |                               01
+            wait_for_ram |                               10 |                               10
+                  finish |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_read_ram[0].read_ram_fsm_reg[0]' using encoding 'sequential' in module 'ram_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 894.109 ; gain = 530.977
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 128   
+	   3 Input      8 Bit       Adders := 64    
+	   2 Input      7 Bit       Adders := 6     
+	   3 Input      7 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               96 Bit    Registers := 2     
+	               64 Bit    Registers := 6     
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 64    
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 214   
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 2     
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 64    
+	   2 Input      7 Bit        Muxes := 16    
+	   4 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   4 Input      2 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 99    
+	   4 Input      1 Bit        Muxes := 17    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dec_viterbi 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi4s_buffer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module generic_sp_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+Module ram_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 4     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               64 Bit    Registers := 2     
+	                7 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 16    
+	   4 Input      7 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 17    
+Module branch_distance 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module branch_distance__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module branch_distance__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module branch_distance__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module acs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module acs__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module trellis_traceback 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module reorder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               96 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     96 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "read_ram_fsm[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "read_ram_fsm[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_axis_output_last_tuser" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_axis_output_last_tuser" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design acs__parameterized1 has unconnected port s_axis_inprev_tvalid
+WARNING: [Synth 8-3331] design acs__parameterized1 has unconnected port m_axis_outprob_tready
+WARNING: [Synth 8-3331] design acs has unconnected port s_axis_inprev_tvalid
+WARNING: [Synth 8-3331] design acs has unconnected port m_axis_outprob_tready
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port m_axis_output_tdata[7]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port m_axis_output_tdata[6]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port m_axis_output_tdata[5]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port m_axis_output_tdata[4]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port m_axis_output_tdata[3]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port m_axis_output_tdata[2]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port m_axis_output_tdata[1]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[15]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[14]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[13]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[12]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[11]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[7]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[6]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[5]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[4]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tdata[3]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[7]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[6]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[5]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[4]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[3]
+WARNING: [Synth 8-3331] design dec_viterbi has unconnected port s_axis_input_tuser[2]
+INFO: [Synth 8-3886] merging instance 'gen_branch_distance[2].inst_branch_distance/m_axis_output_tdata_reg[3]' (FDRE) to 'gen_branch_distance[2].inst_branch_distance/m_axis_output_tdata_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_branch_distance[1].inst_branch_distance/m_axis_output_tdata_reg[3]' (FDRE) to 'gen_branch_distance[1].inst_branch_distance/m_axis_output_tdata_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gen_branch_distance[0].inst_branch_distance/m_axis_output_tdata_reg[3]' (FDRE) to 'gen_branch_distance[0].inst_branch_distance/m_axis_output_tdata_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (acs__parameterized1:/m_axis_outprob_tvalid_reg)
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/read_last_addr_ptr_reg[6]' (FDRE) to 'inst_ram_ctrl/read_last_addr_ptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/read_last_addr_ptr_reg[0]' (FDRE) to 'inst_ram_ctrl/read_last_addr_ptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/read_last_addr_ptr_reg[1]' (FDRE) to 'inst_ram_ctrl/read_last_addr_ptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/read_last_addr_ptr_reg[2]' (FDRE) to 'inst_ram_ctrl/read_last_addr_ptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/read_last_addr_ptr_reg[3]' (FDRE) to 'inst_ram_ctrl/read_last_addr_ptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/read_last_addr_ptr_reg[4]' (FDRE) to 'inst_ram_ctrl/read_last_addr_ptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[acquisition_length][0]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_ram_ctrl/\read_last_addr_ptr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[window_length][0]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_ram_ctrl/write_last_window_complete_reg)
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[window_length][6]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][3]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[acquisition_length][6]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][3]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[window_length][1]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][2]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[acquisition_length][1]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][2]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[window_length][2]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][4]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[acquisition_length][2]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][3]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[window_length][3]' (FDE) to 'inst_ram_ctrl/config_reg[acquisition_length][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst_ram_ctrl/\config_reg[acquisition_length][3] )
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[window_length][4]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[acquisition_length][4]' (FDE) to 'inst_ram_ctrl/config_reg[window_length][5]'
+INFO: [Synth 8-3886] merging instance 'inst_ram_ctrl/config_reg[window_length][5]' (FDE) to 'inst_ram_ctrl/config_reg[acquisition_length][5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst_ram_ctrl/\config_reg[acquisition_length][5] )
+INFO: [Synth 8-3886] merging instance 'reorder:/buffer_end_reg[0]' (FDRE) to 'reorder:/buffer_end_reg[1]'
+INFO: [Synth 8-3886] merging instance 'reorder:/buffer_end_reg[1]' (FDRE) to 'reorder:/buffer_end_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (reorder:/\buffer_end_reg[2] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 894.109 ; gain = 530.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+------------------------------------------------------+----------------+----------------------+--------------------------------+
+|Module Name   | RTL Object                                           | Inference      | Size (Depth x Width) | Primitives                     | 
++--------------+------------------------------------------------------+----------------+----------------------+--------------------------------+
+|inst_ram_ctrl | gen_generic_sp_ram[0].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
+|inst_ram_ctrl | gen_generic_sp_ram[1].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
+|inst_ram_ctrl | gen_generic_sp_ram[2].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
+|inst_ram_ctrl | gen_generic_sp_ram[3].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
++--------------+------------------------------------------------------+----------------+----------------------+--------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 894.109 ; gain = 530.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 902.504 ; gain = 539.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++--------------+------------------------------------------------------+----------------+----------------------+--------------------------------+
+|Module Name   | RTL Object                                           | Inference      | Size (Depth x Width) | Primitives                     | 
++--------------+------------------------------------------------------+----------------+----------------------+--------------------------------+
+|inst_ram_ctrl | gen_generic_sp_ram[0].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
+|inst_ram_ctrl | gen_generic_sp_ram[1].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
+|inst_ram_ctrl | gen_generic_sp_ram[2].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
+|inst_ram_ctrl | gen_generic_sp_ram[3].inst_generic_sp_ram/sp_ram_reg | User Attribute | 128 x 64             | RAM32X1S x 64  RAM64X1S x 64   | 
++--------------+------------------------------------------------------+----------------+----------------------+--------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'gen_branch_distance[2].inst_branch_distance/m_axis_output_tdata_reg[0]' (FDRE) to 'gen_branch_distance[3].inst_branch_distance/m_axis_output_tdata_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_branch_distance[1].inst_branch_distance/m_axis_output_tdata_reg[0]' (FDRE) to 'gen_branch_distance[3].inst_branch_distance/m_axis_output_tdata_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gen_branch_distance[3].inst_branch_distance/m_axis_output_tdata_reg[0]' (FDRE) to 'gen_branch_distance[0].inst_branch_distance/m_axis_output_tdata_reg[0]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   388|
+|3     |LUT1     |   135|
+|4     |LUT2     |  1566|
+|5     |LUT3     |   676|
+|6     |LUT4     |   472|
+|7     |LUT5     |    69|
+|8     |LUT6     |   269|
+|9     |MUXF7    |    34|
+|10    |MUXF8    |    16|
+|11    |RAM32X1S |   256|
+|12    |RAM64X1S |   256|
+|13    |FDRE     |  1211|
+|14    |FDSE     |   128|
+|15    |IBUF     |    11|
+|16    |OBUF     |     3|
+|17    |OBUFT    |     7|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------------+--------------------------------+------+
+|      |Instance                                                 |Module                          |Cells |
++------+---------------------------------------------------------+--------------------------------+------+
+|1     |top                                                      |                                |  5498|
+|2     |  \gen_acs[0].inst_acs                                   |acs                             |    33|
+|3     |  \gen_acs[10].inst_acs                                  |acs__parameterized1             |    32|
+|4     |  \gen_acs[11].inst_acs                                  |acs__parameterized1_0           |    36|
+|5     |  \gen_acs[12].inst_acs                                  |acs__parameterized1_1           |    32|
+|6     |  \gen_acs[13].inst_acs                                  |acs__parameterized1_2           |    36|
+|7     |  \gen_acs[14].inst_acs                                  |acs__parameterized1_3           |    32|
+|8     |  \gen_acs[15].inst_acs                                  |acs__parameterized1_4           |    36|
+|9     |  \gen_acs[16].inst_acs                                  |acs__parameterized1_5           |    32|
+|10    |  \gen_acs[17].inst_acs                                  |acs__parameterized1_6           |    36|
+|11    |  \gen_acs[18].inst_acs                                  |acs__parameterized1_7           |    32|
+|12    |  \gen_acs[19].inst_acs                                  |acs__parameterized1_8           |    36|
+|13    |  \gen_acs[1].inst_acs                                   |acs__parameterized1_9           |    36|
+|14    |  \gen_acs[20].inst_acs                                  |acs__parameterized1_10          |    32|
+|15    |  \gen_acs[21].inst_acs                                  |acs__parameterized1_11          |    36|
+|16    |  \gen_acs[22].inst_acs                                  |acs__parameterized1_12          |    32|
+|17    |  \gen_acs[23].inst_acs                                  |acs__parameterized1_13          |    36|
+|18    |  \gen_acs[24].inst_acs                                  |acs__parameterized1_14          |    32|
+|19    |  \gen_acs[25].inst_acs                                  |acs__parameterized1_15          |    36|
+|20    |  \gen_acs[26].inst_acs                                  |acs__parameterized1_16          |    32|
+|21    |  \gen_acs[27].inst_acs                                  |acs__parameterized1_17          |    36|
+|22    |  \gen_acs[28].inst_acs                                  |acs__parameterized1_18          |    32|
+|23    |  \gen_acs[29].inst_acs                                  |acs__parameterized1_19          |    36|
+|24    |  \gen_acs[2].inst_acs                                   |acs__parameterized1_20          |    32|
+|25    |  \gen_acs[30].inst_acs                                  |acs__parameterized1_21          |    32|
+|26    |  \gen_acs[31].inst_acs                                  |acs__parameterized1_22          |    36|
+|27    |  \gen_acs[32].inst_acs                                  |acs__parameterized1_23          |    36|
+|28    |  \gen_acs[33].inst_acs                                  |acs__parameterized1_24          |    40|
+|29    |  \gen_acs[34].inst_acs                                  |acs__parameterized1_25          |    36|
+|30    |  \gen_acs[35].inst_acs                                  |acs__parameterized1_26          |    40|
+|31    |  \gen_acs[36].inst_acs                                  |acs__parameterized1_27          |    36|
+|32    |  \gen_acs[37].inst_acs                                  |acs__parameterized1_28          |    40|
+|33    |  \gen_acs[38].inst_acs                                  |acs__parameterized1_29          |    36|
+|34    |  \gen_acs[39].inst_acs                                  |acs__parameterized1_30          |    40|
+|35    |  \gen_acs[3].inst_acs                                   |acs__parameterized1_31          |    36|
+|36    |  \gen_acs[40].inst_acs                                  |acs__parameterized1_32          |    36|
+|37    |  \gen_acs[41].inst_acs                                  |acs__parameterized1_33          |    40|
+|38    |  \gen_acs[42].inst_acs                                  |acs__parameterized1_34          |    36|
+|39    |  \gen_acs[43].inst_acs                                  |acs__parameterized1_35          |    40|
+|40    |  \gen_acs[44].inst_acs                                  |acs__parameterized1_36          |    36|
+|41    |  \gen_acs[45].inst_acs                                  |acs__parameterized1_37          |    40|
+|42    |  \gen_acs[46].inst_acs                                  |acs__parameterized1_38          |    36|
+|43    |  \gen_acs[47].inst_acs                                  |acs__parameterized1_39          |    40|
+|44    |  \gen_acs[48].inst_acs                                  |acs__parameterized1_40          |    36|
+|45    |  \gen_acs[49].inst_acs                                  |acs__parameterized1_41          |    40|
+|46    |  \gen_acs[4].inst_acs                                   |acs__parameterized1_42          |    32|
+|47    |  \gen_acs[50].inst_acs                                  |acs__parameterized1_43          |    36|
+|48    |  \gen_acs[51].inst_acs                                  |acs__parameterized1_44          |    40|
+|49    |  \gen_acs[52].inst_acs                                  |acs__parameterized1_45          |    36|
+|50    |  \gen_acs[53].inst_acs                                  |acs__parameterized1_46          |    40|
+|51    |  \gen_acs[54].inst_acs                                  |acs__parameterized1_47          |    36|
+|52    |  \gen_acs[55].inst_acs                                  |acs__parameterized1_48          |    40|
+|53    |  \gen_acs[56].inst_acs                                  |acs__parameterized1_49          |    36|
+|54    |  \gen_acs[57].inst_acs                                  |acs__parameterized1_50          |    40|
+|55    |  \gen_acs[58].inst_acs                                  |acs__parameterized1_51          |    36|
+|56    |  \gen_acs[59].inst_acs                                  |acs__parameterized1_52          |    40|
+|57    |  \gen_acs[5].inst_acs                                   |acs__parameterized1_53          |    36|
+|58    |  \gen_acs[60].inst_acs                                  |acs__parameterized1_54          |    36|
+|59    |  \gen_acs[61].inst_acs                                  |acs__parameterized1_55          |    40|
+|60    |  \gen_acs[62].inst_acs                                  |acs__parameterized1_56          |    36|
+|61    |  \gen_acs[63].inst_acs                                  |acs__parameterized1_57          |    40|
+|62    |  \gen_acs[6].inst_acs                                   |acs__parameterized1_58          |    32|
+|63    |  \gen_acs[7].inst_acs                                   |acs__parameterized1_59          |    36|
+|64    |  \gen_acs[8].inst_acs                                   |acs__parameterized1_60          |    32|
+|65    |  \gen_acs[9].inst_acs                                   |acs__parameterized1_61          |    36|
+|66    |  \gen_branch_distance[0].inst_branch_distance           |branch_distance__parameterized5 |   457|
+|67    |  \gen_branch_distance[1].inst_branch_distance           |branch_distance__parameterized3 |   197|
+|68    |  \gen_branch_distance[2].inst_branch_distance           |branch_distance__parameterized1 |   197|
+|69    |  \gen_branch_distance[3].inst_branch_distance           |branch_distance                 |   198|
+|70    |  \gen_inst_reorder[0].inst_reorder                      |reorder                         |   217|
+|71    |  \gen_inst_reorder[1].inst_reorder                      |reorder_62                      |   218|
+|72    |  \gen_inst_trellis_traceback[0].inst_trellis_traceback  |trellis_traceback               |    71|
+|73    |  \gen_inst_trellis_traceback[1].inst_trellis_traceback  |trellis_traceback_63            |    72|
+|74    |  inst_axi4s_buffer                                      |axi4s_buffer                    |    39|
+|75    |  inst_ram_ctrl                                          |ram_ctrl                        |  1504|
+|76    |    \gen_generic_sp_ram[0].inst_generic_sp_ram           |generic_sp_ram                  |   268|
+|77    |    \gen_generic_sp_ram[1].inst_generic_sp_ram           |generic_sp_ram_64               |   268|
+|78    |    \gen_generic_sp_ram[2].inst_generic_sp_ram           |generic_sp_ram_65               |   284|
+|79    |    \gen_generic_sp_ram[3].inst_generic_sp_ram           |generic_sp_ram_66               |   380|
++------+---------------------------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 930.281 ; gain = 567.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 930.281 ; gain = 195.508
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 930.281 ; gain = 567.148
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 950 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 930.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  RAM32X1S => RAM32X1S (RAMS32): 256 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 256 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+165 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 930.281 ; gain = 580.188
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 930.281 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/recent/final/project_final/project_final.runs/synth_1/dec_viterbi.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dec_viterbi_utilization_synth.rpt -pb dec_viterbi_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 27 22:31:42 2022...

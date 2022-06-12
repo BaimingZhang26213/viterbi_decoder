@@ -1,0 +1,50 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Mar 27 22:34:49 2022
+| Host         : WIN-LITMHNOJJIE running 64-bit major release  (build 9200)
+| Command      : report_methodology -file dec_viterbi_methodology_drc_routed.rpt -pb dec_viterbi_methodology_drc_routed.pb -rpx dec_viterbi_methodology_drc_routed.rpx
+| Design       : dec_viterbi
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 3
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 3          |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.815 ns between inst_axi4s_buffer/input_accept_int_reg/C (clocked by aclk) and s_axis_input_tready (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -2.216 ns between gen_inst_reorder[0].inst_reorder/send_output_reg/C (clocked by aclk) and m_axis_output_tvalid (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.677 ns between gen_inst_reorder[0].inst_reorder/buffer_sreg_reg[0]/C (clocked by aclk) and m_axis_output_tdata[0] (clocked by aclk). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

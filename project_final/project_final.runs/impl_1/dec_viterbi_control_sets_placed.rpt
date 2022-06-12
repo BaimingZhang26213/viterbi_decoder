@@ -1,0 +1,163 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Mar 27 22:33:42 2022
+| Host         : WIN-LITMHNOJJIE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dec_viterbi_control_sets_placed.rpt
+| Design       : dec_viterbi
+| Device       : xc7z020
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    93 |
+| Unused register locations in slices containing registers |   469 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      6 |            4 |
+|      7 |            5 |
+|      8 |            1 |
+|      9 |           64 |
+|     15 |            1 |
+|    16+ |           17 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             101 |           49 |
+| Yes          | No                    | No                     |             256 |          114 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             974 |          239 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+----------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+|   Clock Signal  |                                      Enable Signal                                     |                            Set/Reset Signal                            | Slice Load Count | Bel Load Count |
++-----------------+----------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+|  aclk_IBUF_BUFG | inst_ram_ctrl/read_ram_fsm[0]_2                                                        | inst_ram_ctrl/SR[0]                                                    |                1 |              4 |
+|  aclk_IBUF_BUFG | inst_axi4s_buffer/output_reg[10]_i_1_n_0                                               | inst_ram_ctrl/SR[0]                                                    |                2 |              6 |
+|  aclk_IBUF_BUFG | inst_axi4s_buffer/input_accept_int0                                                    | inst_ram_ctrl/SR[0]                                                    |                1 |              6 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_read_ram[1].m_axis_output_tvalid_int_reg[1]_0[0]                     | inst_ram_ctrl/gen_read_ram[1].m_axis_output_last_tuser_int_reg[1]_1[0] |                3 |              6 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_read_ram[0].m_axis_output_tvalid_int_reg[0]_0[0]                     | inst_ram_ctrl/gen_read_ram[0].m_axis_output_last_tuser_int_reg[0]_1[0] |                2 |              6 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/read_addr_ptr[1]_0                                                       | inst_ram_ctrl/SR[0]                                                    |                3 |              7 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_read_ram[0].read_addr_ptr[0][6]_i_1_n_0                              | inst_ram_ctrl/SR[0]                                                    |                3 |              7 |
+|  aclk_IBUF_BUFG | gen_inst_trellis_traceback[1].inst_trellis_traceback/m_axis_output_tvalid_int_reg_1[0] | gen_inst_reorder[1].inst_reorder/buffer_cnt[6]_i_1_n_0                 |                3 |              7 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/write_addr_ptr[6]_i_1_n_0                                                | inst_ram_ctrl/SR[0]                                                    |                4 |              7 |
+|  aclk_IBUF_BUFG | gen_inst_trellis_traceback[0].inst_trellis_traceback/m_axis_output_tvalid_int_reg_0[0] | gen_inst_reorder[0].inst_reorder/buffer_cnt[6]_i_1__0_n_0              |                3 |              7 |
+|  aclk_IBUF_BUFG |                                                                                        |                                                                        |                6 |              8 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_111[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_115[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_117[0]        | inst_ram_ctrl/SR[0]                                                    |                3 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_109[0]        | inst_ram_ctrl/SR[0]                                                    |                3 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_11[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_126[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_31[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_17[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_43[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_37[0]         | inst_ram_ctrl/SR[0]                                                    |                3 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_45[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_57[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_61[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_7[0]          | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_71[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_65[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_81[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_85[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_15[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_93[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_51[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_49[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_87[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_95[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_119[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_35[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_83[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_99[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_13[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_21[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_53[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_89[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_3[0]          | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_5[0]          | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_59[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_113[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_47[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_39[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_67[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_33[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_75[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_91[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_97[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_27[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_125[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_41[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_69[0]         | inst_ram_ctrl/SR[0]                                                    |                3 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_19[0]         | inst_ram_ctrl/SR[0]                                                    |                3 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_123[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_9[0]          | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_79[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_121[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_73[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_77[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_63[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_25[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_29[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_55[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_23[0]         | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/E[0]                                       | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_101[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_103[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_105[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_branch_distance[0].inst_branch_distance/m_axis_output_tvalid_int_reg_107[0]        | inst_ram_ctrl/SR[0]                                                    |                2 |              9 |
+|  aclk_IBUF_BUFG | gen_acs[0].inst_acs/p_0_in                                                             | inst_ram_ctrl/SR[0]                                                    |                5 |             15 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[2].inst_generic_sp_ram/q[63]_i_1__1_n_0               |                                                                        |               28 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[2].inst_generic_sp_ram/sp_ram_reg_0_31_0_0_i_1__1_n_0 |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[2].inst_generic_sp_ram/sp_ram_reg_0_63_0_0_i_1__0_n_0 |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[3].inst_generic_sp_ram/q[63]_i_1__2_n_0               |                                                                        |               27 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[3].inst_generic_sp_ram/sp_ram_reg_0_31_0_0_i_1__2_n_0 |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[3].inst_generic_sp_ram/sp_ram_reg_0_63_0_0_i_1_n_0    |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[0].inst_generic_sp_ram/q[63]_i_1_n_0                  |                                                                        |               30 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/ram_buffer_reg[0]0                                                       | inst_ram_ctrl/SR[0]                                                    |               24 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/ram_buffer[1][63]_i_1_n_0                                                | inst_ram_ctrl/SR[0]                                                    |               24 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[0].inst_generic_sp_ram/sp_ram_reg_0_63_0_0_i_1__2_n_0 |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[1].inst_generic_sp_ram/q[63]_i_1__0_n_0               |                                                                        |               29 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[1].inst_generic_sp_ram/sp_ram_reg_0_31_0_0_i_1__0_n_0 |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[1].inst_generic_sp_ram/sp_ram_reg_0_63_0_0_i_1__1_n_0 |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | inst_ram_ctrl/gen_generic_sp_ram[0].inst_generic_sp_ram/sp_ram_reg_0_31_0_0_i_1_n_0    |                                                                        |               16 |             64 |
+|  aclk_IBUF_BUFG | gen_inst_trellis_traceback[0].inst_trellis_traceback/E[0]                              | inst_ram_ctrl/SR[0]                                                    |               13 |             96 |
+|  aclk_IBUF_BUFG | gen_inst_trellis_traceback[1].inst_trellis_traceback/E[0]                              | inst_ram_ctrl/SR[0]                                                    |               15 |             96 |
+|  aclk_IBUF_BUFG |                                                                                        | inst_ram_ctrl/SR[0]                                                    |               49 |            101 |
++-----------------+----------------------------------------------------------------------------------------+------------------------------------------------------------------------+------------------+----------------+
+
+

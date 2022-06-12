@@ -1,0 +1,34 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b77cb2afbc4d4388964fe5e33209bb58 --incr --debug typical --relax --mt 2 -L dec_viterbi -L xil_defaultlib -L secureip --snapshot dec_viterbi_behav xil_defaultlib.dec_viterbi -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package dec_viterbi.pkg_param
+Compiling package dec_viterbi.pkg_helper
+Compiling package dec_viterbi.pkg_param_derived
+Compiling package dec_viterbi.pkg_types
+Compiling package dec_viterbi.pkg_components
+Compiling package dec_viterbi.pkg_trellis
+Compiling architecture rtl of entity xil_defaultlib.branch_distance [\branch_distance(edge_weight="11...]
+Compiling architecture rtl of entity xil_defaultlib.branch_distance [\branch_distance(edge_weight="10...]
+Compiling architecture rtl of entity xil_defaultlib.branch_distance [\branch_distance(edge_weight="01...]
+Compiling architecture rtl of entity xil_defaultlib.branch_distance [\branch_distance(edge_weight="00...]
+Compiling architecture rtl of entity xil_defaultlib.acs [\acs(initialize_value="00000000"...]
+Compiling architecture rtl of entity xil_defaultlib.acs [\acs(initialize_value="11000000"...]
+Compiling architecture rtl of entity xil_defaultlib.trellis_traceback [trellis_traceback_default]
+Compiling architecture rtl of entity xil_defaultlib.reorder [reorder_default]
+Compiling architecture rtl of entity xil_defaultlib.axi4s_buffer [\axi4s_buffer(data_width=16)\]
+Compiling architecture rtl of entity xil_defaultlib.generic_sp_ram [\generic_sp_ram(distr_ram=true,w...]
+Compiling architecture rtl of entity xil_defaultlib.ram_ctrl [ram_ctrl_default]
+Compiling architecture rtl of entity xil_defaultlib.dec_viterbi
+Built simulation snapshot dec_viterbi_behav

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1648413124">
+  <File Type="BITSTR-BMM" Name="dec_viterbi_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="dec_viterbi_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="dec_viterbi_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="dec_viterbi_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="dec_viterbi.tcl"/>
+  <File Type="OPT-TIMING" Name="dec_viterbi_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="dec_viterbi_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="dec_viterbi_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="dec_viterbi_reports.tcl"/>
+  <File Type="OPT-DRC" Name="dec_viterbi_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="dec_viterbi.hwdef"/>
+  <File Type="PWROPT-DCP" Name="dec_viterbi_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="dec_viterbi_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="dec_viterbi_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="dec_viterbi_placed.dcp"/>
+  <File Type="PLACE-IO" Name="dec_viterbi_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="dec_viterbi_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="dec_viterbi_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="dec_viterbi_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="dec_viterbi_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="dec_viterbi_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="dec_viterbi_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="dec_viterbi.bgn"/>
+  <File Type="PLACE-TIMING" Name="dec_viterbi_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="dec_viterbi_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="dec_viterbi.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="dec_viterbi_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="dec_viterbi_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="dec_viterbi_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="dec_viterbi.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="dec_viterbi_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="dec_viterbi_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="dec_viterbi_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="dec_viterbi_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="dec_viterbi_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="dec_viterbi_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="dec_viterbi.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="dec_viterbi_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="dec_viterbi.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="dec_viterbi_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="dec_viterbi_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="dec_viterbi.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="dec_viterbi_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="dec_viterbi_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="dec_viterbi_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="dec_viterbi_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="dec_viterbi_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="dec_viterbi_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="dec_viterbi_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="dec_viterbi_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="dec_viterbi_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="dec_viterbi_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="dec_viterbi_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="dec_viterbi_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="dec_viterbi_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="dec_viterbi_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="dec_viterbi_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="dec_viterbi_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="dec_viterbi_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="dec_viterbi_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="dec_viterbi_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="dec_viterbi.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="dec_viterbi_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="dec_viterbi.rbt"/>
+  <File Type="BITSTR-NKY" Name="dec_viterbi.nky"/>
+  <File Type="BG-DRC" Name="dec_viterbi.drc"/>
+  <File Type="RDI-RDI" Name="dec_viterbi.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/packages/pkg_param.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/packages/pkg_param.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/packages/pkg_helper.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/packages/pkg_helper.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/packages/pkg_param_derived.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/packages/pkg_param_derived.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/packages/pkg_types.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/packages/pkg_types.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/acs.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/acs.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/axi4s_buffer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/axi4s_buffer.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/branch_distance.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/branch_distance.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/packages/pkg_components.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/packages/pkg_components.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/packages/pkg_trellis.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/packages/pkg_trellis.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/generic_sp_ram.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/generic_sp_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1326804062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/ram_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/ram_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/recursion.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/recursion.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/reorder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/reorder.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/traceback.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/traceback.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/dec_viterbi.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/src/dec_viterbi.vhd"/>
+        <Attr Name="ImportTime" Val="1392627043"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/testbench/txt_util.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/testbench/txt_util.vhd"/>
+        <Attr Name="ImportTime" Val="1326804062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/trunk/testbench/pkg_tb_fileio.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="dec_viterbi"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/testbench/pkg_tb_fileio.vhd"/>
+        <Attr Name="ImportTime" Val="1326804062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/testbench/txt_util.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/testbench/txt_util.vhd"/>
+        <Attr Name="ImportTime" Val="1326804062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/testbench/pkg_tb_fileio.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../decoder1/Desktop/viterbi_decoder_axi4s/trunk/testbench/pkg_tb_fileio.vhd"/>
+        <Attr Name="ImportTime" Val="1326804062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../users/administrator/desktop/recent/final/ip_final/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dec_viterbi"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/timing.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

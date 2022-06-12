@@ -1,0 +1,26 @@
+# compile vhdl design source files
+vhdl dec_viterbi  \
+"../../../../project_6.srcs/sources_1/imports/trunk/packages/pkg_param.vhd" \
+"../../../../project_6.srcs/sources_1/imports/trunk/packages/pkg_helper.vhd" \
+"../../../../project_6.srcs/sources_1/imports/trunk/packages/pkg_param_derived.vhd" \
+"../../../../project_6.srcs/sources_1/imports/trunk/packages/pkg_types.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../project_6.srcs/sources_1/imports/src/acs.vhd" \
+"../../../../project_6.srcs/sources_1/imports/src/axi4s_buffer.vhd" \
+"../../../../project_6.srcs/sources_1/imports/src/branch_distance.vhd" \
+
+vhdl dec_viterbi  \
+"../../../../project_6.srcs/sources_1/imports/trunk/packages/pkg_components.vhd" \
+"../../../../project_6.srcs/sources_1/imports/trunk/packages/pkg_trellis.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../project_6.srcs/sources_1/imports/src/generic_sp_ram.vhd" \
+"../../../../project_6.srcs/sources_1/imports/src/ram_ctrl.vhd" \
+"../../../../project_6.srcs/sources_1/imports/src/recursion.vhd" \
+"../../../../project_6.srcs/sources_1/imports/src/reorder.vhd" \
+"../../../../project_6.srcs/sources_1/imports/src/traceback.vhd" \
+"../../../../project_6.srcs/sources_1/imports/src/dec_viterbi.vhd" \
+
+# Do not sort compile order
+nosort

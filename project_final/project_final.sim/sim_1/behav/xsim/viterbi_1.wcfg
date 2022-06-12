@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_dec_viterbi_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="pkg_components" />
+            <top_module name="pkg_helper" />
+            <top_module name="pkg_param" />
+            <top_module name="pkg_param_derived" />
+            <top_module name="pkg_tb_fileio" />
+            <top_module name="pkg_trellis" />
+            <top_module name="pkg_types" />
+            <top_module name="tb_dec_viterbi" />
+            <top_module name="txt_util" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="45610635000001fs"></ZoomEndTime>
+      <Cursor1Time time="45610635000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/tb_dec_viterbi/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/aresetn" type="logic">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_input_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_input_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_input_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_input_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_input_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_input_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_input_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_input_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_input_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_input_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_input_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_input_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/s_axis_output_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_output_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_output_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/s_axis_output_tlast" type="logic">
+      <obj_property name="ElementShortName">s_axis_output_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_output_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/s_axis_output_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_output_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_output_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/s_axis_output_tdata" type="logic">
+      <obj_property name="ElementShortName">s_axis_output_tdata</obj_property>
+      <obj_property name="ObjectShortName">s_axis_output_tdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_ctrl_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_ctrl_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_ctrl_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_ctrl_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_ctrl_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_ctrl_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_ctrl_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_ctrl_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_ctrl_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/m_axis_ctrl_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_ctrl_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_ctrl_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/send_data_fsm" type="other">
+      <obj_property name="ElementShortName">send_data_fsm</obj_property>
+      <obj_property name="ObjectShortName">send_data_fsm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/block_send_end" type="other">
+      <obj_property name="ElementShortName">block_send_end</obj_property>
+      <obj_property name="ObjectShortName">block_send_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/current_block" type="other">
+      <obj_property name="ElementShortName">current_block</obj_property>
+      <obj_property name="ObjectShortName">current_block</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/current_block_length" type="other">
+      <obj_property name="ElementShortName">current_block_length</obj_property>
+      <obj_property name="ObjectShortName">current_block_length</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/current_block_length_tail" type="other">
+      <obj_property name="ElementShortName">current_block_length_tail</obj_property>
+      <obj_property name="ObjectShortName">current_block_length_tail</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/sys_bit_counter" type="other">
+      <obj_property name="ElementShortName">sys_bit_counter</obj_property>
+      <obj_property name="ObjectShortName">sys_bit_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/decoded_hardware" type="array">
+      <obj_property name="ElementShortName">decoded_hardware[0:500]</obj_property>
+      <obj_property name="ObjectShortName">decoded_hardware[0:500]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/block_receive_complete" type="other">
+      <obj_property name="ElementShortName">block_receive_complete</obj_property>
+      <obj_property name="ObjectShortName">block_receive_complete</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/new_block_length" type="other">
+      <obj_property name="ElementShortName">new_block_length</obj_property>
+      <obj_property name="ObjectShortName">new_block_length</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/first_block_out" type="other">
+      <obj_property name="ElementShortName">first_block_out</obj_property>
+      <obj_property name="ObjectShortName">first_block_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/last_block_out" type="other">
+      <obj_property name="ElementShortName">last_block_out</obj_property>
+      <obj_property name="ObjectShortName">last_block_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/current_block_out" type="other">
+      <obj_property name="ElementShortName">current_block_out</obj_property>
+      <obj_property name="ObjectShortName">current_block_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/current_block_length_out" type="other">
+      <obj_property name="ElementShortName">current_block_length_out</obj_property>
+      <obj_property name="ObjectShortName">current_block_length_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/sys_bit_counter_out" type="other">
+      <obj_property name="ElementShortName">sys_bit_counter_out</obj_property>
+      <obj_property name="ObjectShortName">sys_bit_counter_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/valid_cnt" type="other">
+      <obj_property name="ElementShortName">valid_cnt</obj_property>
+      <obj_property name="ObjectShortName">valid_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/ready_cnt" type="other">
+      <obj_property name="ElementShortName">ready_cnt</obj_property>
+      <obj_property name="ObjectShortName">ready_cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/BLOCK_LENGTH_START" type="other">
+      <obj_property name="ElementShortName">BLOCK_LENGTH_START</obj_property>
+      <obj_property name="ObjectShortName">BLOCK_LENGTH_START</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/BLOCK_LENGTH_END" type="other">
+      <obj_property name="ElementShortName">BLOCK_LENGTH_END</obj_property>
+      <obj_property name="ObjectShortName">BLOCK_LENGTH_END</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/BLOCK_LENGTH_INCR" type="other">
+      <obj_property name="ElementShortName">BLOCK_LENGTH_INCR</obj_property>
+      <obj_property name="ObjectShortName">BLOCK_LENGTH_INCR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/SIM_ALL_BLOCKS" type="other">
+      <obj_property name="ElementShortName">SIM_ALL_BLOCKS</obj_property>
+      <obj_property name="ObjectShortName">SIM_ALL_BLOCKS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/SIM_BLOCK_START" type="other">
+      <obj_property name="ElementShortName">SIM_BLOCK_START</obj_property>
+      <obj_property name="ObjectShortName">SIM_BLOCK_START</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/SIM_BLOCK_END" type="other">
+      <obj_property name="ElementShortName">SIM_BLOCK_END</obj_property>
+      <obj_property name="ObjectShortName">SIM_BLOCK_END</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/WINDOW_LENGTH" type="other">
+      <obj_property name="ElementShortName">WINDOW_LENGTH</obj_property>
+      <obj_property name="ObjectShortName">WINDOW_LENGTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/ACQUISITION_LENGTH" type="other">
+      <obj_property name="ElementShortName">ACQUISITION_LENGTH</obj_property>
+      <obj_property name="ObjectShortName">ACQUISITION_LENGTH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dec_viterbi/DATA_DIRECTORY" type="array">
+      <obj_property name="ElementShortName">DATA_DIRECTORY[1:77]</obj_property>
+      <obj_property name="ObjectShortName">DATA_DIRECTORY[1:77]</obj_property>
+   </wvobject>
+</wave_config>
